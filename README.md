@@ -1,7 +1,3 @@
-<h1> Olha esse repositorio perfeito demais ksks</h1>
-<h3>literalmente foi legal de fazer, mas vejamos oq eu posso dizer</h3>
- - é um tanto quanto interessante mexer aqui
- é estranho o modo como funciona
- mas é meu interesse, apesar de no futuro querer fazer pentest e não programação
- no fim tudo isso vai ser util
- 
+<body background="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg">
+<h3>Repositorio de estudos</h3>
+ - Conglomerado de informações para aprender
