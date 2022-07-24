@@ -1,10 +1,11 @@
 from openpyxl import Workbook, load_workbook
 import time
+import getpass
 import os
 print("============Olá, Sistema de Ponto 0.01============")
 user = os.getlogin()
 login = input("\n Login:")
-senha = input(" Senha:")
+senha = getpass.getpass(" Senha:")
 os.system('cls') or None
 osponto = login + '.xlsx'
 if (os.path.isfile(osponto)):
