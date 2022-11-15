@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        {{ Pessoa.id }} - {{ Pessoa.nome }}
+
+
+          <form action="{% url 'update' Pessoa.id %}" method = "POST">  
+            {% csrf_token %}
+            <input type="text" name="nome">
+            <button type="submit">Atualizar</button>
+          </form>
+
+    </body>
+</html>
