@@ -1,0 +1,152 @@
+1:
+#include <iostream>
+using namespace std;
+int main()
+{
+  int x = 5;
+  int y = 6;
+  int *ptr;
+  int *prt;
+  prt = &y;
+  ptr = &x;
+  cout << "A soma de " << *prt << " e " << *ptr << " e: " << *ptr+*prt << endl;
+return 0;
+}
+==========================================================================================
+2:
+#include <iostream>
+using namespace std;
+void passagem(int &x, int &y){
+    x = 5;
+    y = 6;
+
+}
+int main()
+{
+ int a, b;
+ a = 1;
+ b = 7;
+ passagem(a,b);
+   cout << "A soma de " << a << " e " << b << " e: " << a+b << endl;
+return 0;
+}
+
+==========================================================================================
+3:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  int x = 5;
+  int y = 6;
+  int *ptr, *prt, maior;
+  prt = &y;
+  ptr = &x;
+  if (*prt>*ptr)
+    maior = *prt;
+  else
+    maior = *ptr;
+  cout << "O maior numero e " << maior << endl;
+return 0;
+}
+
+
+==========================================================================================
+4: 
+#include <iostream>
+using namespace std;
+int main() {
+    int elementos;
+    cout << "Numero de elementos do vetor: ";
+    cin >> elementos;
+  int numbers[elementos];
+  int *ptr;
+  ptr = numbers;
+  cout << "entre com os " << elementos << " elementos do vetor:" << endl;
+  for (int i = 0; i < elementos; ++i) {
+    cout << "elemento " << i << ": ";
+    cin >> ptr[i];
+  }
+  cout << "O vetor possui os seguintes elementos: "<< endl;
+  for (int n = 0; n < elementos; ++n) {
+    cout << "elemento " << n << ": " << ptr[n] << endl;
+  }
+  return 0;
+}
+
+
+==========================================================================================
+5:
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+int *numeros;
+int n, i;
+while (true){
+printf("Quantidade de elementos (1 a 100): ");
+scanf("%d",&n);
+numeros = (int *)malloc(n*sizeof(int));
+if (n <= 100 && n >= 1){break;}};
+for (i=0 ; i<n ; i++){
+    printf("Numero %d: ", i);
+    scanf("%d", &numeros[i]);
+}
+printf("O maior elemento e: ");
+int maior = numeros[0];
+for (i=0 ; i<n ; i++){
+if (i==0){
+    numeros[i] = maior;
+}
+if (numeros[i]>maior){
+    maior = numeros[i];
+    }}
+    printf("%i", maior);
+return 0;}
+
+==========================================================================================
+6:
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main (){
+char string[189819];
+cout << "Digite um string: ";
+cin.getline(string,189819);
+cout << "O string armazenado tem " << strlen(string) << " caracteres." << endl;
+return 0;
+}
+
+
+==========================================================================================
+7:
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, aux, prod=1, b;
+    cout << "Entre com um numero: ";
+    cin >> n;
+    b = n;
+    for(aux=1 ; aux<=n ; aux++)
+        prod *= aux;
+    cout << "O fatorial de "<< b << " e: " << prod << endl;
+    return 0;
+}
+
+==========================================================================================
+8:
+#include <iostream>
+using namespace std;
+int main()
+{
+    string strings, adc="";
+    cout << "Entre com uma string: ";
+    cin >> strings;
+    for(int i=0; i<strings.length(); i++)
+        adc= strings[i] + adc;
+    cout << "A string reversa e: "<< adc << endl;
+    return 0;
+}
+
+==========================================================================================
